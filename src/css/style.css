@@ -1,0 +1,83 @@
+@font-face {
+    font-family: BodoniModa;
+    src: url("../assets/fonts/BodoniModa.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../assets/fonts/Roboto-Black.ttf");
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: var(--spacing-medium);
+    font-family: BodoniModa, 'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-small) 0;
+}
+
+.form label{
+    display: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+}
+
+.form__input-container {
+    display: flex;
+    width: 100%;
+}
+
+.form__input {
+    flex: 1;
+    height: 32px;
+    padding: 0 var(--spacing-x-small);
+    border-bottom: 2px solid black;
+}
+.form__subject {
+    border-right: 2px solid black;
+}
+.form__note-input{
+    width: 100%;
+    resize: none;
+    padding: 0 var(--spacing-x-small);
+}
+.form__submit-button {
+    height: 32px;
+    background-color: var(--color-submit-buttons);
+    font-size: var(--font-size-base);
+}
+
+.form__submit-button:hover {
+    opacity: 0.8;
+}
+.form__error-text {
+    visibility: hidden;
+    text-align: center;
+    padding: var(--spacing-x-small);
+}
+
